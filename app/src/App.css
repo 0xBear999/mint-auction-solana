@@ -1,0 +1,145 @@
+:root {
+  --color: rgb(224, 115, 238);
+  --color-hover: 153,51,255
+}
+
+body, html {
+  height: 100%;
+  background-image: linear-gradient(to right,#c34dd3, #d9a8f5, #eeaeca);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Connect__header {
+  background-image: linear-gradient(to right, #61419c, #e073ee);
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.Connect__wallet {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+}
+
+.Connect__button {
+  font-family: sans-serif;
+  font-size: 18px;
+  padding: 12px 32px;
+  margin: 1rem;
+  cursor: pointer;
+
+  background-image: linear-gradient( #841bf1, #cba2f7);
+  border: 0;
+}
+  
+
+.Connect__button:hover, 
+.Initialize__ModalClose:hover, 
+.Initialize__button:hover,
+.Image__button:hover {
+  box-shadow: rgba(var(--color-hover), 0.5) 0px 0px 20px 0px;
+  background-color: mediumpurple;
+}
+
+.Initialize__token {
+  text-align: center;
+}
+
+.Initialize__button {
+  position: relative;
+  top: 20px; 
+}
+
+.Initialize__Detail {
+  position: relative;
+  top: -80px;
+  left: 20px;
+  text-shadow: 0 0 80px rgb(192 219 255 / 75%), 0 0 32px rgb(65 120 255 / 24%);
+  color: #ffffff;
+  display: inline-block;
+}
+
+.Initialize__Detail:hover {
+  box-shadow: rgba(0,0,0,0.5) 0px 0px 20px 0px;
+  cursor: pointer;
+}
+
+.Image__form {
+  text-align: center;
+}
+
+.Image__button {
+  position: relative;
+  top: 30px;
+}
+
+.Image__file {
+  position: relative;
+  left:  45px;
+}
+
+.Image__price {
+  position: relative;
+  right: 0px;
+}
+
+.Initialize__ModalHeader {
+  text-align: left;
+  background-image: linear-gradient(to right, #61419c, #e073ee);
+  padding: 10px 20px;
+  color: #ffffff;
+  text-shadow: 0 0 80px rgb(192 219 255 / 75%), 0 0 32px rgb(65 120 255 / 75%);
+  border: 2px double;
+  border-radius: 30px;
+}
+
+.Initialize__ModalClose, 
+.Initialize__button, 
+.Swap__button {
+  color: #ffffff;
+  border: 2px double transparent;
+  border-radius: 50px;
+  background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left top, rgb(1, 110, 218), rgb(217, 0, 192));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  padding: 15px 48px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.ReactModal__Body--open {
+  overflow: hidden;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 2000ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+  opacity: 0;
+}
+
+.ReactModal__Content {
+  text-align: center;
+}
+
+.Swap__button {
+  position: relative;
+  left: 680px;
+}
+
+.Swap__Modal {
+  padding: 70px;
+}
+
+.Swap__From {
+  position: relative;
+  right: 6px;
+}

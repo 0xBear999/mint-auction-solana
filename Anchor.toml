@@ -1,0 +1,12 @@
+[programs.localnet]
+auction = "3MzZ4DoRKjH8ar7VELx7KRg4KB31sayjQi81RYucUvpB"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/vut/.config/solana/id.json"
+
+[scripts]
+test = "npx ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"

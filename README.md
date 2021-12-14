@@ -1,148 +1,37 @@
-Contribution: 2020-02-23 20:00
-
-Contribution: 2020-02-24 20:00
-
-Contribution: 2020-02-24 20:01
-
-Contribution: 2020-02-24 20:02
-
-Contribution: 2020-02-25 20:00
-
-Contribution: 2020-02-25 20:01
-
-Contribution: 2020-02-25 20:02
-
-Contribution: 2020-02-25 20:03
-
-Contribution: 2020-02-25 20:04
-
-Contribution: 2020-02-25 20:05
-
-Contribution: 2020-02-25 20:06
-
-Contribution: 2020-02-25 20:07
-
-Contribution: 2020-02-25 20:08
-
-Contribution: 2020-02-27 20:00
-
-Contribution: 2020-02-27 20:01
-
-Contribution: 2020-02-27 20:02
-
-Contribution: 2020-02-27 20:03
-
-Contribution: 2020-02-27 20:04
-
-Contribution: 2020-02-27 20:05
-
-Contribution: 2020-02-27 20:06
-
-Contribution: 2020-02-27 20:07
-
-Contribution: 2020-02-28 20:00
-
-Contribution: 2020-02-28 20:01
-
-Contribution: 2020-02-28 20:02
-
-Contribution: 2020-02-29 20:00
-
-Contribution: 2020-02-29 20:01
-
-Contribution: 2020-02-29 20:02
-
-Contribution: 2020-02-29 20:03
-
-Contribution: 2020-03-01 20:00
-
-Contribution: 2020-03-01 20:01
-
-Contribution: 2020-03-01 20:02
-
-Contribution: 2020-03-01 20:03
-
-Contribution: 2020-03-01 20:04
-
-Contribution: 2020-03-01 20:05
-
-Contribution: 2020-03-01 20:06
-
-Contribution: 2020-03-01 20:07
-
-Contribution: 2020-03-01 20:08
-
-Contribution: 2020-03-02 20:00
-
-Contribution: 2020-03-03 20:00
-
-Contribution: 2020-03-03 20:01
-
-Contribution: 2020-03-03 20:02
-
-Contribution: 2020-03-03 20:03
-
-Contribution: 2020-03-03 20:04
-
-Contribution: 2020-03-03 20:05
-
-Contribution: 2020-03-03 20:06
-
-Contribution: 2020-03-04 20:00
-
-Contribution: 2020-03-04 20:01
-
-Contribution: 2020-03-06 20:00
-
-Contribution: 2020-03-06 20:01
-
-Contribution: 2020-03-06 20:02
-
-Contribution: 2020-03-06 20:03
-
-Contribution: 2020-03-06 20:04
-
-Contribution: 2020-03-06 20:05
-
-Contribution: 2020-03-07 20:00
-
-Contribution: 2020-03-07 20:01
-
-Contribution: 2020-03-07 20:02
-
-Contribution: 2020-03-08 20:00
-
-Contribution: 2020-03-08 20:01
-
-Contribution: 2020-03-08 20:02
-
-Contribution: 2020-03-10 20:00
-
-Contribution: 2020-03-10 20:01
-
-Contribution: 2020-03-10 20:02
-
-Contribution: 2020-03-10 20:03
-
-Contribution: 2020-03-10 20:04
-
-Contribution: 2020-03-10 20:05
-
-Contribution: 2020-03-10 20:06
-
-Contribution: 2020-03-10 20:07
-
-Contribution: 2020-03-10 20:08
-
-Contribution: 2020-03-11 20:00
-
-Contribution: 2020-03-11 20:01
-
-Contribution: 2020-03-11 20:02
-
-Contribution: 2020-03-12 20:00
-
-Contribution: 2020-03-12 20:01
-
-Contribution: 2020-03-13 20:00
-
+Still not finish :( 
+
+# Start
+
+```
+npm install
+```
+
+Make sure you have enough SOL (do this for both your phantom account and your cli account)
+```
+solana airdrop 5 <Your address> --url https://api.devnet.solana.com
+solana config set --url https://api.devnet.solana.com
+```
+# Testing
+```
+anchor test --provider.cluster localnet
+```
+
+
+# With frontend
+
+Create Typescript IDL for the frontend, deploy smart contract to Solana devnet
+
+```
+anchor build -t "../../app/src"
+anchor deploy
+```
+
+Let's start our frontend
+```
+cd app
+npm start
+```
+
+# What's next
+1) Create account with bump and nonce or try to fetch the mint and token address so it doesn't have to create a new token everytime
+2) Try Metaplex
